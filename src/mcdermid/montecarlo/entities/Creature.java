@@ -24,5 +24,9 @@ public abstract class Creature {
         return false;
     }
 
+    public boolean isAlive() {
+        return this.alive;
+    }
+
     public abstract int conroll();
 }
