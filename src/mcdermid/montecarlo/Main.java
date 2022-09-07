@@ -17,13 +17,26 @@ public class Main {
         //combat rounds follow
 
         //ROUND ONE
+        System.out.println("Round 1: ");
+        System.out.println("Minion damage: ");
         for (Minion m : minions) {
-            human.damage(m.shoot(human));
+            int x = m.shoot(human);
+            human.damage(x);
+            System.out.println(x);
         }
-        human.damage(dragon.bite(human));
-        dragon.damage(human.sinkhole(dragon));
+        System.out.println("Dragon damage: ");
+        int x = dragon.bite(human);
+        human.damage(x);
+        System.out.println(x);
+        System.out.println("Human damage to Dragon: ");
+        x = human.sinkhole(dragon);
+        dragon.damage(x);
+        System.out.println(x);
+        System.out.println("Human damage to Minions: ");
         for (Minion m : minions) {
-            m.damage(human.sinkhole(m));
+            x = human.sinkhole(m);
+            m.damage(x);
+            System.out.println(x);
         }
         //ASSESS DAMAGE
         if (!human.isAlive()) {

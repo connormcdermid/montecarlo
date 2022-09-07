@@ -4,9 +4,10 @@ import mcdermid.montecarlo.Die;
 
 public class Wyvern extends Creature {
 
-    private int health = 110;
-
-    public int armourClass = 13;
+    public Wyvern() {
+        this.setHealth(100);
+        this.setArmourClass(13);
+    }
 
     @Override
     public int conroll() {

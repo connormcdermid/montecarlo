@@ -2,6 +2,14 @@ package mcdermid.montecarlo.entities;
 
 public abstract class Creature {
 
+    public int getArmourClass() {
+        return armourClass;
+    }
+
+    public void setArmourClass(int armourClass) {
+        this.armourClass = armourClass;
+    }
+
     private int health;
 
     public int armourClass;

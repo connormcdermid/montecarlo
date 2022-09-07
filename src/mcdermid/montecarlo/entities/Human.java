@@ -3,11 +3,11 @@ package mcdermid.montecarlo.entities;
 import mcdermid.montecarlo.Die;
 
 public class Human extends Creature {
-    private int health = 64;
 
-    public final int armourClass = 13;
-
-
+    public Human() {
+        this.setHealth(75);
+        this.setArmourClass(16);
+    }
 
     public int sinkhole(Creature target) {
         Die d10 = new Die(10);
