@@ -240,9 +240,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int fights = Integer.parseInt(args[0]);
+        int fights = Integer.parseInt(args[0]); // capture requested number of simulations
         int total = 0;
-        // count the total number of victories out of 100
+        // count the total number of victories out of requested number
         for (int i = 0; i < fights; i++) {
             total += combat();
         }
