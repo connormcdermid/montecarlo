@@ -43,4 +43,14 @@ public class Wyvern extends Creature {
         }
         return dmg + pdmg;
     }
+
+    public int claws(Creature target) {
+        Die d20 = new Die(20);
+        Die d8 = new Die(8);
+        int dmg = 0;
+        if (d20.roll() >= target.armourClass) {
+            dmg = d8.roll() + d8.roll();
+        }
+        return dmg;
+    }
 }

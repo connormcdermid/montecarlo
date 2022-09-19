@@ -10,11 +10,11 @@ public abstract class Creature {
         this.armourClass = armourClass;
     }
 
-    private int health;
+    private int health; // each creature has health. If this runs out, the creature dies.
 
-    public int armourClass;
+    public int armourClass; // each creature has an armour class. Attack rolls lower than this miss, others hit.
 
-    private boolean alive = true;
+    private boolean alive = true; // is the creature alive?
 
     public int getHealth() {
         return health;
